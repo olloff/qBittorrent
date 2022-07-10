@@ -208,6 +208,8 @@ a.propButton img {
     padding: 5px 20px 5px 5px;
     text-decoration: none;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contextMenu li a:hover {
@@ -231,8 +233,9 @@ a.propButton img {
     margin: -29px 0 0 100%;
     padding: 0;
     position: absolute;
-    width: 164px;
     z-index: 8000;
+    min-width: 164px;
+    max-width: 225px;
 }
 
 .contextMenu li ul li a {
